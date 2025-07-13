@@ -1,3 +1,4 @@
+/* Style général */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* En-tête */
 header {
   background-color: #0a74da;
   color: white;
@@ -13,6 +15,29 @@ header {
   padding: 2rem 0;
 }
 
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #ffffff33;
+}
+
+/* Sections générales */
 section {
   background-color: white;
   margin: 1rem auto;
@@ -36,6 +61,58 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* Section "À propos" (si tu crées une page about.html) */
+.about-page {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Formulaire de contact */
+form {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #222;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#formMessage {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Pied de page */
 footer {
   background-color: #222;
   color: white;
@@ -43,3 +120,4 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
